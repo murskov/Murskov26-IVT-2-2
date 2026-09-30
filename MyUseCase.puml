@@ -1,0 +1,24 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor "Менеджер" as User
+actor "Админ" as Admin
+package "Учет клиентов турфирмы" {
+    usecase "Регистрация клиента" as UC_Login
+    usecase "Поиск клиента" as UC_Search
+    usecase "Оформление путевки" as UC_Oform
+    usecase "Просмотр клиентов" as UC_View
+    usecase "Редактирование данных клиента" as UC_Edit
+    usecase "Удаление записи клиента" as UC_Delete
+    usecase "Изменение статуса путевки" as UC_Status
+
+}
+User --> UC_Login
+User --> UC_Search
+User --> UC_Oform
+User --> UC_View
+Admin --> UC_View
+Admin --> UC_Edit
+Admin --> UC_Delete
+Admin --> UC_Status
+@enduml
