@@ -2,31 +2,31 @@
 PRAGMA foreign_keys = ON;
 
 CREATE TABLE IF NOT EXISTS clients (
-                                       client_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                                       full_name TEXT NOT NULL,
-                                       phone TEXT NOT NULL UNIQUE,
-                                       email TEXT
+   client_id INTEGER PRIMARY KEY AUTOINCREMENT,
+   full_name TEXT NOT NULL,
+   phone TEXT NOT NULL UNIQUE,
+   email TEXT
 );
 
 CREATE TABLE IF NOT EXISTS tours (
-                                     tour_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                                     title TEXT NOT NULL,
-                                     destination TEXT NOT NULL,
-                                     price REAL NOT NULL CHECK (price >= 0),
+ tour_id INTEGER PRIMARY KEY AUTOINCREMENT,
+ title TEXT NOT NULL,
+ destination TEXT NOT NULL,
+ price REAL NOT NULL CHECK (price >= 0),
     available INTEGER NOT NULL DEFAULT 1
     CHECK (available IN (0, 1))
     );
 
 CREATE TABLE IF NOT EXISTS bookings (
-                                        booking_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                                        client_id INTEGER NOT NULL,
-                                        tour_id INTEGER NOT NULL,
-                                        booking_date TEXT NOT NULL,
-                                        status TEXT NOT NULL DEFAULT 'Новая'
-                                        CHECK (status IN (
-                                        'Новая',
-                                        'Забронирована',
-                                        'Отменена'
+    booking_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    client_id INTEGER NOT NULL,
+    tour_id INTEGER NOT NULL,
+    booking_date TEXT NOT NULL,
+    status TEXT NOT NULL DEFAULT 'Новая'
+    CHECK (status IN (
+    'Новая',
+    'Забронирована',
+    'Отменена'
 )),
     FOREIGN KEY (client_id)
     REFERENCES clients(client_id),
