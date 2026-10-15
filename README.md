@@ -36,3 +36,4 @@ Business Logic Layer — обработка действий пользоват�
 Data Layer — хранение информации о клиентах и туристических путёвках в базе данных.
 
 ![Диаграмма](https://github.com/murskov/Murskov26-IVT-2-2/blob/main/MyUseCase.png?raw=true)
+![ER-диаграмма базы данных](diagrams/er_diagram.png)

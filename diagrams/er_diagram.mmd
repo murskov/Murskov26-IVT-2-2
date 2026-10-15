@@ -1,0 +1,27 @@
+
+erDiagram
+    CLIENTS ||--o{ BOOKINGS : "оформляет"
+    TOURS ||--o{ BOOKINGS : "бронируется"
+
+    CLIENTS {
+        INTEGER client_id PK
+        TEXT full_name
+        TEXT phone
+        TEXT email
+    }
+
+    TOURS {
+        INTEGER tour_id PK
+        TEXT title
+        TEXT destination
+        REAL price
+        INTEGER available
+    }
+
+    BOOKINGS {
+        INTEGER booking_id PK
+        INTEGER client_id FK
+        INTEGER tour_id FK
+        TEXT booking_date
+        TEXT status
+    }
