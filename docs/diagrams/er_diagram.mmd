@@ -1,0 +1,56 @@
+
+erDiagram
+    CLIENTS ||--o{ BOOKINGS : "оформляет"
+    TOURS ||--o{ BOOKINGS : "указывается в"
+    TOUR_STATUSES ||--o{ TOURS : "определяет статус"
+    ADMINISTRATORS o|--o{ MANAGERS : "регистрирует"
+    ADMINISTRATORS o|--o{ ADMINISTRATORS : "создает аккаунты"
+
+    CLIENTS {
+        INTEGER client_id PK
+        TEXT full_name
+        TEXT login UK
+        TEXT password_hash
+        TEXT phone
+        TEXT email
+        REAL balance
+    }
+
+    TOURS {
+        INTEGER tour_id PK
+        TEXT title
+        TEXT destination
+        REAL price
+        INTEGER available
+        INTEGER status_id FK
+    }
+
+    BOOKINGS {
+        INTEGER booking_id PK
+        INTEGER client_id FK
+        INTEGER tour_id FK
+        TEXT booking_date
+        TEXT status
+        INTEGER paid
+    }
+
+    TOUR_STATUSES {
+        INTEGER status_id PK
+        TEXT name UK
+    }
+
+    MANAGERS {
+        INTEGER manager_id PK
+        TEXT full_name
+        TEXT login UK
+        TEXT password_hash
+        INTEGER created_by_admin_id FK
+    }
+
+    ADMINISTRATORS {
+        INTEGER admin_id PK
+        TEXT full_name
+        TEXT login UK
+        TEXT password_hash
+        INTEGER created_by_admin_id FK
+    }

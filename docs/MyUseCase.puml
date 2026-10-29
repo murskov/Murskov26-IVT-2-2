@@ -11,14 +11,19 @@ package "Учет клиентов турфирмы" {
     usecase "Редактирование данных клиента" as UC_Edit
     usecase "Удаление записи клиента" as UC_Delete
     usecase "Изменение статуса путевки" as UC_Status
+    usecase "Регистрация менеджеров" as UC_Manager
+    usecase "Регистрация администраторов" as UC_Admin
+
 
 }
-User --> UC_Login
-User --> UC_Search
-User --> UC_Oform
-User --> UC_View
-Admin --> UC_View
-Admin --> UC_Edit
-Admin --> UC_Delete
-Admin --> UC_Status
+User -- UC_Login
+User -- UC_Search
+User -- UC_Oform
+User -- UC_View
+Admin -- UC_View
+Admin -- UC_Edit
+Admin -- UC_Delete
+Admin -- UC_Status
+Admin -- UC_Manager
+Admin -- UC_Admin
 @enduml

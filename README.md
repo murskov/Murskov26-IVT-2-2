@@ -35,5 +35,5 @@ Presentation Layer — пользовательский интерфейс, че
 Business Logic Layer — обработка действий пользователей, проверка корректности данных и выполнение бизнес-логики.
 Data Layer — хранение информации о клиентах и туристических путёвках в базе данных.
 
-![Диаграмма](https://github.com/murskov/Murskov26-IVT-2-2/blob/main/MyUseCase.png?raw=true)
-![ER-диаграмма базы данных](diagrams/er_diagram.png)
+[Диаграмма](https://github.com/murskov/Murskov26-IVT-2-2/blob/main/MyUseCase.png?raw=true)
+![ER-диаграмма базы данных](docs/diagrams/er_diagram.png)
