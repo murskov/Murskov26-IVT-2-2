@@ -1,0 +1,51 @@
+-
+  "client_id": 1
+  "full_name": "Иванов Иван Иванович"
+  "phone": "+79990000001"
+  "email": "ivanov@example.com"
+  "balance": 0.0
+  "bookings":
+    -
+      "booking_id": 1
+      "booking_date": "2026-10-10"
+      "status": "Забронирована"
+      "tour":
+        "tour_id": 1
+        "title": "Отдых на море"
+        "destination": "Сочи"
+        "price": 45000.0
+      "manager": null
+-
+  "client_id": 2
+  "full_name": "Мурсков Роман Сергеевич"
+  "phone": "+79990000002"
+  "email": "murskov@example.com"
+  "balance": 0.0
+  "bookings":
+    -
+      "booking_id": 2
+      "booking_date": "2026-10-11"
+      "status": "Новая"
+      "tour":
+        "tour_id": 2
+        "title": "Горный отдых"
+        "destination": "Ереван"
+        "price": 60000.0
+      "manager": null
+-
+  "client_id": 3
+  "full_name": "Шеронов Федор Алексеевич"
+  "phone": "+79990000003"
+  "email": "sheronov@example.com"
+  "balance": 0.0
+  "bookings":
+    -
+      "booking_id": 3
+      "booking_date": "2026-10-12"
+      "status": "Отменена"
+      "tour":
+        "tour_id": 3
+        "title": "Знакомство с культурой"
+        "destination": "Тель-Авив"
+        "price": 35000.0
+      "manager": null

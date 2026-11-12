@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<clients>
+  <client>
+    <client_id>1</client_id>
+    <full_name>Иванов Иван Иванович</full_name>
+    <phone>+79990000001</phone>
+    <email>ivanov@example.com</email>
+    <balance>0.0</balance>
+    <bookings>
+      <item>
+        <booking_id>1</booking_id>
+        <booking_date>2026-10-10</booking_date>
+        <status>Забронирована</status>
+        <tour>
+          <tour_id>1</tour_id>
+          <title>Отдых на море</title>
+          <destination>Сочи</destination>
+          <price>45000.0</price>
+        </tour>
+        <manager nil="true" />
+      </item>
+    </bookings>
+  </client>
+  <client>
+    <client_id>2</client_id>
+    <full_name>Мурсков Роман Сергеевич</full_name>
+    <phone>+79990000002</phone>
+    <email>murskov@example.com</email>
+    <balance>0.0</balance>
+    <bookings>
+      <item>
+        <booking_id>2</booking_id>
+        <booking_date>2026-10-11</booking_date>
+        <status>Новая</status>
+        <tour>
+          <tour_id>2</tour_id>
+          <title>Горный отдых</title>
+          <destination>Ереван</destination>
+          <price>60000.0</price>
+        </tour>
+        <manager nil="true" />
+      </item>
+    </bookings>
+  </client>
+  <client>
+    <client_id>3</client_id>
+    <full_name>Шеронов Федор Алексеевич</full_name>
+    <phone>+79990000003</phone>
+    <email>sheronov@example.com</email>
+    <balance>0.0</balance>
+    <bookings>
+      <item>
+        <booking_id>3</booking_id>
+        <booking_date>2026-10-12</booking_date>
+        <status>Отменена</status>
+        <tour>
+          <tour_id>3</tour_id>
+          <title>Знакомство с культурой</title>
+          <destination>Тель-Авив</destination>
+          <price>35000.0</price>
+        </tour>
+        <manager nil="true" />
+      </item>
+    </bookings>
+  </client>
+</clients>

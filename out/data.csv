@@ -1,0 +1,4 @@
+﻿client_id,full_name,phone,email,balance,booking_booking_id,booking_booking_date,booking_status,booking_tour_tour_id,booking_tour_title,booking_tour_destination,booking_tour_price
+1,Иванов Иван Иванович,+79990000001,ivanov@example.com,0.0,1,2026-10-10,Забронирована,1,Отдых на море,Сочи,45000.0
+2,Мурсков Роман Сергеевич,+79990000002,murskov@example.com,0.0,2,2026-10-11,Новая,2,Горный отдых,Ереван,60000.0
+3,Шеронов Федор Алексеевич,+79990000003,sheronov@example.com,0.0,3,2026-10-12,Отменена,3,Знакомство с культурой,Тель-Авив,35000.0
